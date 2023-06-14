@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML_超链接跳转到锚点</title>
+</head>
+
+<body>
+  <!-- 设置锚点 -->
+  <!-- 第一种方式：a标签配合name属性 -->
+  <a name="test1"></a>
+  <!-- 第二种方式：a 标签配合id属性 -->
+  <a id="test2"></a>
+
+  <!-- 跳转到锚点 -->
+  <a href="#test1">去test1锚点</a>
+  <a href="#">回到顶部</a>
+  <a href="demo.html#test1">去demo.html 页面的test1描点</a>
+  <a href="">刷新本页面</a>
+  <!-- 加入了js脚本 -->
+  <a href="javascript:alert(1)">点我弹窗</a>
+
+  <a href="#htl"> 看灰太狼</a>
+  <a href="#atm">看奥特曼</a>
+  <a name="htl"></a>
+  <p>我是一只狼，一只很邪恶的狼</p>
+  <img src="./path_test/a/b/灰太狼.jpg" alt="灰太狼">
+  <p id="atm">我是一只奥特曼，一只很能打的奥特曼</p>
+  <img src="./奥特曼.jpg" alt="奥特曼">
+  <p>我是一只怪兽，一只很丑的怪兽</p>
+  <img src="./path_test/怪兽.jpg" alt="怪兽">
+</body>
+
+</html>

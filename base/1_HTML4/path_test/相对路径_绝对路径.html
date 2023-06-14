@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>相对路径_绝对路径</title>
+</head>
+<body>
+    <h1>相对路径</h1>
+    <!-- 相对路径 -->
+    <img src="./怪兽.jpg" alt="同级路径">
+    <img src="./a/喜羊羊.jpg" alt="下一级路径">
+    <img src="../奥特曼.jpg" alt="上一级路径">
+    <!-- 相对路径中的 ./ 可以省略不写。相对路径依赖的是当前位置，后期若调整了文件位置，那么文件中的路径也要修改 -->
+    <!-- 绝对路径：分为本绝对路径，网络绝对路径-->
+    <br>
+    <h1>绝对路径</h1>
+    本地绝对路径
+    <img src="/home/alex/VscodeProjects/learn-front-end/base/1_HTML4/奥特曼.jpg" alt=""> 
+    网络绝对路径
+    <img width="400" src="https://rs-channel.huanqiucdn.cn/imageDir/d1eee333dd7b68d0f3eb38e5fd5c792b.png" alt="">
+    测试防盗链
+    <img src="https://mmbiz.qpic.cn/mmbiz_png/ScqRBmrn0w3ibEHbTxorxS12e71ythvjKIIIl5EWcy0cYeqnKIRwHAUmcvcPTpaK89qc6voq8TFW0O3rIQ3KlicQ/640.jpg" alt="">
+</body>
+</html>

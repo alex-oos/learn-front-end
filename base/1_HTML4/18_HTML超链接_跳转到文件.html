@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML_超链接跳转到文件</title>
+</head>
+<body>
+  <!-- 浏览器能直接打开的文件 -->
+  <a href="./resource/我的自拍.jpg">看自拍</a>
+  <a href="./resource/小电影.mp4">看电影</a>
+  <a href="./resource/小姐姐.gif">看小姐姐</a>
+  <a href="./resource/如何一夜暴富.pdf">点我一夜暴富</a>
+
+  <!--  浏览器不能打开的文件，会直接下载-->
+  <a href="./resource/内部资源.zip">内部资源</a>
+  <!-- 强制触发下载 注意2：若想强制触发下载，请使用 download 属性，属性值即为下载文件的名称。 -->
+  <a href="./resource/小电影.mp4" download="电影片段.mp4">下载电影</a>
+</body>
+</html>
