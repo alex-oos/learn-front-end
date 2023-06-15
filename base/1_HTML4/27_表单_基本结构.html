@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>表单_基本结构</title>
+</head>
+<body>
+<!--form 表单-->
+<!--action 用于指定表单的提交地址-->
+<!--target 用于控制表单提交后，如何打开页面，常用值如下： _self 本窗口打开，_blank 在新窗口打开-->
+<!--method:用于控制表单的提交方式，暂时只需了解，-->
+<form action="https://www.baidu.com" target="_blank" method="get">
+  <!--  input 输入框 type，text 文本-->
+  <input type="text" name="wd">
+  <button>去百度搜索</button>
+</form>
+<form action="https://search.jd.com/search" target="_self" method="get">
+  <input type="text" name="keyword">
+  <button>去京东搜索</button>
+</form>
+<hr>
+<a href="https://search.jd.com/search?keyword=手机">搜索手机</a>
+</body>
+</html>
