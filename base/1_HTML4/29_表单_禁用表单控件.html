@@ -2,9 +2,52 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>表单_禁用表单控件</title>
 </head>
 <body>
+<!--给表单控件的标签设置 disabled 既可禁用表单控件。-->
+<!--input 、 textarea 、 button 、 select 、 option 都可以设置 disabled 属性-->
+<!--禁用之后的表现为置灰-->
+<form action="http://search.jd.com/search">
+  <!-- 文本输入框 -->
+  账户：<input disabled type="text" name="account" value="zhangsan" maxlength="10"><br>
+  <!-- 密码输入框 -->
+  密码：<input type="password" name="pwd" value="123" maxlength="6" disabled><br>
+  <!-- 单选框 -->
+  性别：
+  <input type="radio" name="gender" value="male" disabled>男
+  <input type="radio" name="gender" value="female" checked disabled>女<br>
+  <!-- 多选框 -->
+  爱好：
+  <input type="checkbox" name="hobby" value="smoke" checked disabled>抽烟
+  <input type="checkbox" name="hobby" value="drink" disabled>喝酒
+  <input type="checkbox" name="hobby" value="perm" checked disabled>烫头<br>
+  其他：
+  <textarea name="other" cols="23" rows="3" disabled></textarea><br>
+  籍贯：
+  <select name="place" disabled>
+    <option value="冀">河北</option>
+    <option value="鲁">山东</option>
+    <option value="晋" selected>山西</option>
+    <option value="粤">广东</option>
+  </select>
+  <!-- 隐藏域 -->
+  <input type="hidden" name="from" value="toutiao" disabled>
+  <br>
+  <!-- 确认按钮_第一种写法 -->
+  <button type="submit" disabled>确认</button>
+  <!-- 确认按钮_第二种写法 -->
+  <!-- <input type="submit" value="确认"> -->
+  <!-- 重置按钮_第一种写法 -->
+  <!-- <button type="reset">重置</button> -->
+  <!-- 重置按钮_第二种写法 -->
+  <input type="reset" value="点我重置" disabled>
+  <!-- 普通按钮_第一种写法 -->
+  <input disabled type="button" value="检测账户是否被注册">
+  <!-- 普通按钮_第二种写法 -->
+  <button type="button">检测账户是否被注册</button>
+
+</form>
 
 </body>
 </html>
