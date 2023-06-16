@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>新增的全局属性</title>
+  <style>
+    div {
+      width: 600px;
+      height: 200px;
+      border: 1px solid black;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .box1 {
+      background-color: skyblue;
+    }
+    
+    .box2 {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+<!--contenteditable 是否可以编辑-->
+<!--spellcheck 规定是否对元素进行拼写和语法检查-->
+<!--draggable 是否可以拖动-->
+<!--hidden 隐藏-->
+<!--data-* 用于存储页面的私有定制数据。-->
+<div class="box1" spellcheck="true" contenteditable="true" draggable="false">Lorem ipsum dolor sit amet.</div>
+<div class="box2" spellcheck="false" draggable="true" data-a="1" data-b="2" data-c="3">Lorem ipsum dolor sit amet.</div>
+<h1 hidden="hidden">hello</h1>
+</body>
+</html>
