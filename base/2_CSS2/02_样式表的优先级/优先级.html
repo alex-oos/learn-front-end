@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>优先级</title>
+  <style>
+    h1{
+      color: green;
+    }
+    h1{
+      color: blue;
+      font-size: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<!--优先级：行内样式>内部样式=外部样式-->
+<!--后来者居上原则：内部样式、外部样式，这二者的优先级相同，且：后面的 会覆盖 前面的（简记：“后来
+者居上”）。-->
+<!--同一个样式表中，优先级也和编写顺序有关，且：后面的 会覆盖 前面的（简记：“后来
+者居上”）-->
+
+<h1 style="color: red">行内样式</h1>
+<h1>内部样式</h1>
+<h1>外部样式</h1>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>06_属性选择器</title>
+  <style>
+    /* 选中具有title属性的元素 */
+    div[title] {
+      color: red;
+    }
+    /* 选中title属性值为atguigu的元素 */
+    div[title="atguigu2"]{
+      color: orange;
+    }
+    /* 选中title属性值以a开头的元素 */
+    div[title^="b"]{
+    color: green;
+    }
+    /* 选中title属性值以u结尾的元素 */
+    div[title$="u"] {
+      color: skyblue;
+    }
+    /* 选中title属性值包含g的元素 */
+    div[title*="abcd"] {
+      color: fuchsia;
+    }
+    
+  </style>
+</head>
+<body>
+<div title="atguigu1">尚硅谷1</div>
+<hr>
+<div title="atguigu2">尚硅谷2</div>
+<hr>
+<div title="b">尚硅谷3</div>
+<hr>
+<div title="guigu">尚硅谷4</div>
+<hr>
+<div title="abcd" class="school">尚硅谷5</div>
+<hr>
+
+
+</body>
+</html>
