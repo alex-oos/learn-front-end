@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS三大特性</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    /*优先级*/
+    /*简单聊： !important > 行内样式 > ID选择器 > 类选择器 > 元素选择器 > * > 继承的样*/
+    /*                   式。*/
+    h2{
+      color: green;
+    }
+    div {
+      color: red;
+      font-size: 40px;
+      background-color: skyblue;
+    }
+    p {
+      color: purple;
+      background-color: inherit;
+    }
+    *{
+      color: gray;
+    }
+/*    span {
+      color: white;
+      background-color: black;
+    }*/
+    p>span {
+      color: blue;
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+<h1 id="atguigu">尚硅谷</h1>
+<hr>
+<div>
+  我是div中的文字
+  <br>
+  <span>我是span中的文字1</span>
+  <br>
+  <span>我是span中的文字2</span>
+  <br>
+  <span>我是span中的文字3</span>
+  <br>
+  <p>
+    <span>我是span中的文字4</span>
+  </p>
+</div>
+</body>
+</html>
