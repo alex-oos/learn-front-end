@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>10_vertical_align</title>
+  <style>
+    /*vertical_align
+    作用：同一行元素之间，或表格单元格内文字的垂直方式
+    常用值： baseline：使元素的基线与父元素的基线对齐
+    top:使元素的顶部与其所爱行的顶部对齐
+    middle：使元素的中部与父元素的基线，加上父元素的字母x的一半对齐
+    bottom：使元素的底部与其所在行的底部对齐*/
+    div {
+      font-size: 100px;
+      height: 300px;
+      background-color: skyblue;
+    }
+    
+    span {
+      font-size: 40px;
+      background-color: orange;
+      vertical-align: middle;
+    }
+    
+    img {
+      height: 30px;
+      vertical-align: top;
+    }
+    
+    .san {
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+<div>
+  atguigu尚硅谷x<span>x前端</span>
+</div>
+<hr>
+<div>
+  atguigu尚硅谷x<img src="../images/我的自拍.jpg">
+</div>
+<hr>
+<table border="1" cellspacing="0">
+  <caption>人员信息</caption>
+  <thead>
+  <tr>
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>性别</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr height="200">
+    <td class="san">张三</td>
+    <td>18</td>
+    <td>男</td>
+  </tr>
+  <tr>
+    <td>李四</td>
+    <td>20</td>
+    <td>女</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

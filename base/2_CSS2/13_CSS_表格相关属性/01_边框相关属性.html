@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01_边框相关属性</title>
+  <style>
+    table {
+      /*
+      border-width:  边框宽度 css 中可用的长度值
+      border-color: green;  边框颜色
+      border-style: 边框风格
+      none 默认值
+      solid 实线
+      dashed 虚线
+      dotted 电线
+      double 双实线
+      
+      
+      */
+      border: 2px green solid;
+    }
+    
+    td, th {
+      border: 2px orange solid;
+    }
+    
+    h2 {
+      border: 3px red solid;
+    }
+    
+    span {
+      border: 3px purple dashed;
+    }
+  </style>
+</head>
+<body>
+<h2>边框的相关属性，不仅仅是表格能用，其他元素也能用</h2>
+<span>你要加油呀</span>
+<table>
+  <caption>人员信息</caption>
+  <thead>
+  <tr>
+    <th>序号</th>
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>性别</th>
+    <th>政治面貌</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>张三</td>
+    <td>18</td>
+    <td>男</td>
+    <td>党员</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>李四</td>
+    <td>19</td>
+    <td>女</td>
+    <td>团员</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>赵六</td>
+    <td>21</td>
+    <td>女</td>
+    <td>党员</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
