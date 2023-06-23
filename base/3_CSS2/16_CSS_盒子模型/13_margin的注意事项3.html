@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>13_margin的注意事项3</title>
+  <style>
+    #d1 {
+      width: 400px;
+      height: 400px;
+      margin: 50px;
+      background-color: deepskyblue;
+    }
+    
+    img {
+      margin: 50px;
+    }
+    
+    .one {
+      background-color: skyblue;
+    }
+    
+    .two {
+      background-color: orange;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 30000px;
+      margin-bottom: 30000px;
+    }
+    
+    .three {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+<!--块级元素、行内块元素，均可以完美地设置四个方向的 margin ；但行内元素，左右
+margin 可以完美设置，上下 margin 设置无效。-->
+<div id="d1">我是一个块级元素</div>
+<div>我是一段文字</div>
+<hr>
+<img alt="" src="../images/悟空.jpg">
+<div>我是一段文字</div>
+<hr>
+<span class="one">人之初</span>
+<span class="two">性本善</span>
+<span class="three">性相近</span>
+<div>我是一段文字</div>
+
+</body>
+</html>
