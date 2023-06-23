@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>04_修改元素的显示模式</title>
+  <style>
+    /*
+    css 中 display 属性用于指定元素应该生成的框的类型。
+    display 属性有以下几种值：
+    none：元素不会被显示。
+    block：元素将显示为块级元素，此元素前后会带有换行符。
+    inline：元素会被显示为内联元素，元素前后没有换行符。
+    inline-block：元素会被显示为内联元素，但是元素的内容作为块元素处理，元素前后会带有换行符。
+    */
+    div {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      display: inline-block;
+    }
+    
+    #d2 {
+      background-color: skyblue;
+    }
+    
+    #d3 {
+      background-color: green;
+    }
+    
+    a {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      display: block;
+    }
+    
+    #s1 {
+      background-color: skyblue;
+    }
+    
+    #s2 {
+      background-color: orange;
+    }
+    
+    #s3 {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+<div id="d1">你好1</div>
+
+<div id="d2">你好2</div>
+
+<div id="d3">你好3</div>
+
+<hr>
+<a href="https://www.baidu.com" id="s1">去百度</a>
+<a href="https://www.jd.com" id="s2">去京东</a>
+<a href="https://www.toutiao.com" id="s3">去百头条</a>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_CSS中常用的长度单位</title>
+  <style>
+    html {
+      font-size: 40px;
+    }
+    
+    #d1 {
+      /*第一种长度单位：px（像素）*/
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      background-color: skyblue;
+    }
+    
+    #d2 {
+      /*第二种长度单位：em（相对于当前元素或其父元素的font-size的倍数）*/
+      width: 20em;
+      height: 1em;
+      font-size: 20px;
+      background-color: orange;
+    }
+    
+    #d3 {
+      /*第三种长度单位：rem（相对于根元素html的font-size的倍数）*/
+      width: 20rem;
+      height: 2rem;
+      font-size: 20px;
+      background-color: green;
+    }
+    
+    #d4 {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      background-color: gray;
+    }
+    
+    .inside {
+      /*第四种长度单位：百分比（相对于父元素的宽度）*/
+      width: 50%;
+      height: 50%;
+      font-size: 20px;
+      background-color: skyblue;
+    }
+    
+    .test {
+      font-size: 20px;
+      /*text-indent是用来设定文本块中第一行的缩进。所有浏览器都支持 text-indent 属性。*/
+      text-indent: 2em;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+<div id="d1">1</div>
+<hr>
+<div id="d2">2</div>
+<hr>
+<div id="d3">3</div>
+<hr>
+<div id="d4">
+  <div class="inside">4</div>
+</div>
+<div class="test">好好学习，天天向上</div>
+</body>
+</html>
