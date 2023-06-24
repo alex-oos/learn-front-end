@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>18_处理内容的溢出</title>
+  <style>
+    /*
+    处理内容溢出:
+    overflow: visible  显示默认值| hidden 隐藏 | scroll 显示滚动条，不管内容是否溢出 | auto自动显示滚动条，只有内容溢出时才显示滚动条
+    overflow-x:水平方向溢出内容的处理方式 visible | hidden | scroll | auto
+    overflow-y: 垂直方向溢出内容给的处理方式 visible | hidden | scroll | auto
+    */
+    #d1 {
+      width: 400px;
+      height: 200px;
+      background-color: skyblue;
+      overflow: auto;
+    }
+    
+    #d2 {
+      width: 1000px;
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+<div id="d1">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium veritatis reiciendis id
+  molestiae magnam aspernatur esse blanditiis est. Maiores reprehenderit porro dignissimos, perspiciatis suscipit
+  <div id="d2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur alias provident quia, reiciendis
+    incidunt rerum, perspiciatis quam nobis omnis quae maxime in esse architecto doloremque numquam tenetur eum quasi
+    velit excepturi ut id inventore. Consequuntur, ad iure velit maiores obcaecati voluptatibus expedita molestiae natus
+    sit mollitia veritatis vero aliquid adipisci?
+  </div>
+  ullam perferendis nam inventore sapiente earum voluptatem dolores ut quae fuga. Itaque delectus cum et illum
+  enim dicta similique nemo pariatur, recusandae molestias. Repellendus ratione recusandae minima ea quis eligendi
+  quae amet. Animi, nulla. Perferendis libero nihil eligendi ea! Accusantium molestias numquam reprehenderit
+  quibusdam delectus, repellat impedit ratione. Iste nam autem vero magni facilis at ex ullam, officiis, corrupti
+  voluptate tempora. Quibusdam, aperiam eveniet illo quidem excepturi, neque, repellat totam beatae in quas
+  provident natus!
+</div>
+</body>
+</html>

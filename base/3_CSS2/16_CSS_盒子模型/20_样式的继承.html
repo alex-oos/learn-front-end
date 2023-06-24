@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>20_样式的继承</title>
+  <style>
+    /*
+    会继承的css样式：
+    字体属性，文本属性（除了vertical-align）、文字颜色、等
+    不会继承的css样式：
+    边框、背景、外边距、内边距、宽高、溢出方式 等。
+    一个规律：能继承的属性，都是不影响布局的，简单说：都是和盒子模型没关系的。
+    */
+    
+    /* body {
+    
+    } */
+    #d1 {
+      height: 600px;
+      padding: 50px;
+      background-color: gray;
+    }
+    
+    #d2 {
+      height: 400px;
+      padding: 50px;
+      background-color: orange;
+      font-size: 40px;
+      color: yellow;
+      font-weight: bold;
+    }
+    
+    #d3 {
+      height: 200px;
+      background-color: green;
+    }
+  
+  </style>
+</head>
+<body>
+<div id="d1">
+  <div id="d2">
+    <div id="d3" style="font-family: 隶书;">你好啊</div>
+  </div>
+</div>
+</body>
+</html>
