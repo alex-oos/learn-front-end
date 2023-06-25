@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>06_浮动布局小练习</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .logo {
+      width: 200px;
+    }
+    
+    .banner1 {
+      width: 540px;
+      margin: 0 10px;
+      
+    }
+    
+    .banner2 {
+      width: 200px;
+    }
+    
+    .logo, .banner1, .banner2 {
+      height: 80px;
+      line-height: 80px;
+      background-color: #ccc;
+    }
+    
+    nav {
+      height: 30px;
+      background-color: #ccc;
+      margin-top: 10px;
+      line-height: 30px;
+    }
+    
+    .item1, .item2 {
+      width: 368px;
+      height: 198px;
+      line-height: 198px;
+      border: 1px solid black;
+      margin-right: 10px;
+    }
+    
+    .content {
+      margin-top: 10px;
+      
+    }
+    
+    
+    .item3, .item4, .item5, .item6 {
+      width: 178px;
+      height: 198px;
+      line-height: 198px;
+      border: 1px solid black;
+      margin-right: 10px;
+    }
+    
+    .bottom {
+      margin-top: 10px;
+    }
+    
+    .item7, .item8, .item9 {
+      width: 198px;
+      height: 128px;
+      line-height: 128px;
+      border: 1px solid black;
+    }
+    
+    .item8 {
+      margin: 10px 0;
+    }
+    
+    .right {
+      float: right;
+    }
+    
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+      
+    }
+    
+    .left {
+      float: left;
+    }
+    
+    footer {
+      height: 60px;
+      background-color: #ccc;
+      margin-top: 10px;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!--头部-->
+  <header class="clearfix">
+    <header class="logo left">logo</header>
+    <header class="banner1 left">banner1</header>
+    <header class="banner2 left">banner2</header>
+  </header>
+  <!--菜单-->
+  <nav>菜单</nav>
+  <!--内容区-->
+  <div class="content clearfix">
+    <!--左侧-->
+    <div class="left">
+      <!--上-->
+      <div class="top clearfix">
+        <span class="item1 left">栏目一</span>
+        <span class="item2 left">栏目二</span>
+      </div>
+      <!-- 下-->
+      <div class="bottom clearfix">
+        <span class="item3 left">栏目三</span>
+        <span class="item4 left">栏目四</span>
+        <span class="item5 left">栏目五</span>
+        <span class="item6 left">栏目六</span>
+      </div>
+    </div>
+    <!--右侧-->
+    <div class="right1 clearfix">
+      <span class="item7 right">栏目七</span>
+      <span class="item8 right">栏目八</span>
+      <span class="item9 right">栏目九</span>
+    </div>
+  
+  </div>
+  <footer>页脚</footer>
+</div>
+</body>
+</html>

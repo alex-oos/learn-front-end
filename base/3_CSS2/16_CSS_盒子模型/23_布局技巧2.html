@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>23_布局技巧2</title>
+  <style>
+    .outer {
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      text-align: center;
+      line-height: 400px;
+    }
+    
+    .inner {
+      background-color: orange;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  如何让子元素，在父亲中水平居中
+  若子元素是块元素，给父元素加上：margin:0 auto;
+  若子元素是行内元素，给父元素加上：text-align:center;
+</div>
+<div class="outer">
+  <!--span为行内元素-->
+  <span class="inner">出来玩啊？</span>
+</div>
+<br>
+<!--div 是块级元素-->
+<div class="outer">
+  <p>出来玩！</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>24_布局小技巧3</title>
+  <style>
+    .outer {
+      width: 400px;
+      height: 400px;
+      background-color: gray;
+      text-align: center;
+      line-height: 400px;
+      font-size: 0px;
+      text-indent: 20px;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    span {
+      font-size: 40px;
+      vertical-align: middle;
+      background-color: orange;
+    }
+    
+    h1 {
+      background-color: green;
+      font-size: 29px;
+      height: 100px;
+      width: 100px;
+      margin-top: 150px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  如何让子元素，在父亲中垂直居中：
+  若子元素是块元素，给给子元素加上：margin-top,值为（父元素content -子元素盒子总高）/2
+  若子元素为行内元素、行内块元素：
+  让父元素的height =line-height,每个子元素都加上：vertical-align:middle;
+  补充：若想绝对垂直居中，父元素font-size设置为0
+</div>
+<br>
+<div class="outer">
+  <!--span为行内元素-->
+  <span>出来玩啊？</span>
+  <img alt="" src="../images/悟空.jpg">
+</div>
+<br>
+<div class="outer">
+  <h1>块元素</h1>
+</div>
+</body>
+</html>

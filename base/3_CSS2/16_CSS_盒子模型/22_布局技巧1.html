@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>22_布局小技巧</title>
+  <style>
+    .outer {
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      overflow: hidden;
+    }
+    
+    .inner {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      margin: 0 auto;
+      margin-top: 150px;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  行内元素、行内块元素,可以被父元素当做文本处理
+  即：可以像处理文本对齐一样，去处理：行内、行内块元素在父元素中的对齐。
+  例如：text-align、line-height、text-indent 等
+</div>
+<div class="outer">
+  <div class="inner">inner</div>
+</div>
+
+</body>
+</html>

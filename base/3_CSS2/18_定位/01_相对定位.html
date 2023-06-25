@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_相对定位</title>
+  <style>
+    .outer {
+      width: 300px;
+      background-color: skyblue;
+      border: 1px solid black;
+      padding: 20px;
+    }
+    
+    .box {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+    }
+    
+    .box1 {
+      background-color: #888;
+    }
+    
+    .box2 {
+      background-color: orange;
+      /*相对定位*/
+      position: relative;
+      top: 10px;
+    }
+    
+    .box3 {
+      background-color: green;
+      position: relative;
+      top: 20px;
+      
+    }
+  </style>
+</head>
+<body>
+<!--
+相对定位： position:relative;
+特点：
+1.不会脱离文档流，元素位置的变化，只是视觉效果上的变化，不会对其他元素产生任何影响。
+2. 定位元素的显示层级比普通元素高，无论什么定位，显示层级都是一样的。
+默认规则是：
+定位的元素会盖在普通元素之上。都发生定位的两个元素，后写的元素会盖在先写的元素之上。
+3.
+left 不能和 right 一起设置， top 和 bottom 不能一起设置。
+4. 相对定位的元素，也能继续浮动，但不推荐这样做。
+5. 相对行为的元素，也能通过 margin 调整位置，但不推荐这样做。
+-->
+
+
+<div class="outer">
+  <div class="box box1">1</div>
+  <div class="box box2">2</div>
+  <div class="box box3">3</div>
+</div>
+</body>
+</html>

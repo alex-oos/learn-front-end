@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>25_元素之间的空白问题</title>
+  <style>
+    div {
+      height: 200px;
+      background-color: gray;
+      font-size: 0px;
+    }
+    
+    .s1 {
+      background-color: skyblue;
+    }
+    
+    .s2 {
+      background-color: orange;
+    }
+    
+    .s3 {
+      background-color: green;
+    }
+    
+    span {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  产生的原因：
+  行内元素、行内块元素，彼此之间的换行会被浏览器解析为一个空白字符。
+  解决方案：
+  1. 方案一： 去掉换行和空格（不推荐）。
+  2. 方案二： 给父元素设置 font-size:0 ，再给需要显示文字的元素，单独设置字体大小（推
+  荐）。
+  17. 行内块的幽灵
+</div>
+<div>
+  <span class="s1">人之初</span>
+  <span class="s2">性本善</span>
+  <span class="s3">性相近</span>
+  <hr>
+  <img alt="" src="../images/悟空.jpg">
+  <img alt="" src="../images/悟空.jpg">
+  <img alt="" src="../images/悟空.jpg">
+</div>
+</body>
+</html>
