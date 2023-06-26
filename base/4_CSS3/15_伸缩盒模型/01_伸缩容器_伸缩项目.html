@@ -6,8 +6,47 @@
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Document</title>
+  <style>
+    .outer {
+      width: 1000px;
+      height: 600px;
+      background-color: #888;
+      /*将该元素变为伸缩容器（开启了flex布局）*/
+      display: flex;
+    }
+    
+    .inner {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+    
+    .inner3 {
+      display: flex;
+      font-size: 20px;
+      line-height: 2em;
+    }
+  </style>
 </head>
 <body>
 
+<div class="outer">
+  <div class="inner">1</div>
+  <div class="inner">2</div>
+  <div class="inner inner3">
+    <div>a</div>
+    <div>b</div>
+    <div>c</div>
+  </div>
+</div>
+<div>
+  伸缩容器，伸缩项目
+  伸缩容器： 开启了 flex 的元素，就是：伸缩容器。
+  1. 给元素设置： display:flex 或 display:inline-flex ，该元素就变为了伸缩容 器。
+  2. display:inline-flex 很少使用，因为可以给多个伸缩容器的父容器，也设置为伸缩 容器。
+  3. 一个元素可以同时是：伸缩容器、伸缩项目。
+</div>
 </body>
 </html>

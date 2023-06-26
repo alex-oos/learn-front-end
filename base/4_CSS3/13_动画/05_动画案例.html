@@ -1,13 +1,28 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        name="viewport">
-  <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <title>Document</title>
+  <title>05_动画案例</title>
+  <style>
+    div {
+      width: 130px;
+      height: 130px;
+      background-image: url('../images/bike.png');
+      margin: 0 auto;
+      margin-top: 100px;
+      animation: bike 1s steps(31) infinite;
+    }
+    
+    @keyframes bike {
+      from {
+      }
+      to {
+        background-position: 0px -4030px;
+      }
+    }
+  </style>
 </head>
 <body>
-
+<div></div>
 </body>
 </html>

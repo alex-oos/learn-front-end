@@ -5,9 +5,49 @@
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <title>transition-property</title>
+  <title>01_基本使用</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      opacity: 0.5;
+      /*设置哪个属性需要过度效果*/
+      /*transition-property: width, height, background-color;*/
+      /* 让所有能过渡的属性，都过渡 */
+      transition-property: all;
+      /* 分别设置时间 */
+      /* transition-duration: 1s,1s,1s; */
+      /* 设置一个时间，所有人都用 */
+      transition-duration: 1s;
+    }
+    
+    .box1:hover {
+      width: 400px;
+      height: 400px;
+      background-color: green;
+      transform: rotate(45deg);
+      box-shadow: 0px 0px 20px black;
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
+<div class="box1"></div>
+<div>
+  transition-property
+  作用：定义哪个属性需要过渡，只有在该属性中定义的属性（比如宽、高、颜色等）才会以有过渡
+  效果。
+  常用值：
+  1. none ：不过渡任何属性。
+  2. all ：过渡所有能过渡的属性。
+  3. 具体某个属性名 ，例如： width 、 heigth ，若有多个以逗号分隔。
+  不是所有的属性都能过渡，值为数字，或者值能转为数字的属性，都支持过渡，否则不支持
+  过渡。
+  常见的支持过渡的属性有：颜色、长度值、百分比、 z-index 、 opacity 、 2D 变换属
+  性、 3D 变换属性、阴影
+  一般过度效果这种需要与伪元素组合使用
+</div>
 
 </body>
 </html>

@@ -5,9 +5,29 @@
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <title>Document</title>
+  <title>03_过渡复合属性</title>
+  <style>
+    .outer {
+      width: 1000px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition: linear all 3s 0.5s;
+    }
+    
+    .outer:hover .inner {
+      width: 1000px;
+    }
+  </style>
 </head>
 <body>
-
+<div class="outer">
+  <div class="inner"></div>
+</div>
 </body>
 </html>
