@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_边框圆角</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      margin: 0 auto;
+      border-radius: 10px;
+      /*border-radius: 200px;*/
+      /*
+      border-radius: 50%;
+      */
+      
+      /* border-top-left-radius: 100px; */
+      /* border-top-right-radius: 50px; */
+      /* border-bottom-right-radius: 20px; */
+      /* border-bottom-left-radius: 10px; */
+      
+      /* border-top-left-radius: 100px 50px; */
+      /* border-top-right-radius: 50px 20px; */
+      /* border-bottom-right-radius: 20px 10px; */
+      /* border-bottom-left-radius: 10px 5px; */
+      
+      border-radius: 100px 50px 20px 10px / 50px 20px 10px 5px;
+      
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  在 CSS3 中，使用 border-radius 属性可以将盒子变为圆角。
+  同时设置四个角的圆角：
+  border-radius:10px;
+  属性名
+  作用
+  设置左上角圆角半径：
+  border-top-left-radius
+  1. 一个值是正圆半径，
+  2. 两个值分别是椭圆的 x 半径、 y 半径。
+  设置右上角圆角半径：
+  border-top-right-radius
+  1. 一个值是正圆半径，
+  2. 两个值分别是椭圆的 x 半径、 y 半径。
+  设置右下角圆角半径：
+  border-bottom-right-radius
+  1. 一个值是正圆半径，
+  2. 两个值分别是椭圆的 x 半径、 y 半径。
+  设置左下角圆角半径：
+  border-bottom-left-radius
+  1. 一个值是正圆半径，
+  2. 两个值分别是椭圆的 x 半径、 y 半径。
+  分开设置每个角的圆角，综合写法（几乎不用）：
+  border-raidus: 左上角x 右上角x 右下角x 左下角x / 左上y 右上y 右下y 左下y
+</div>
+</body>
+</html>

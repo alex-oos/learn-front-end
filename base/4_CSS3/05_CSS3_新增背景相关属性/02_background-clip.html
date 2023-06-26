@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>02_background-clip</title>
+  <style>
+    .box1 {
+      width: 400px;
+      height: 400px;
+      background-color: skyblue;
+      margin: 0 auto;
+      font-size: 120px;
+      font-weight: bold;
+      padding: 50px;
+      border: 50px dashed rgba(255, 0, 0, 0.7);
+      color: transparent;
+      
+      background-image: url("../images/bg02.jpg");
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      -webkit-background-clip: text;
+    }
+  </style>
+</head>
+<body>
+<div class="box1">你好啊</div>
+<div>
+  background-clip
+  作用：设置背景图的向外裁剪的区域。
+  语法
+  1. border-box ： 从 border 区域开始向外裁剪背景。 —— 默认值
+  2. padding-box ： 从 padding 区域开始向外裁剪背景。
+  3. content-box ： 从 content 区域开始向外裁剪背景。
+  4. text ：背景图只呈现在文字上。
+  注意：若值为 text ，那么 backgroun-clip 要加上 -webkit- 前缀。
+</div>
+</body>
+</html>

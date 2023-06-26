@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>02_边框外轮廓</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      padding: 10px;
+      border: 10px solid black;
+      background-color: gray;
+      font-size: 40px;
+      margin: 0 auto;
+      margin-top: 100px;
+      
+      /* outline-width: 20px; */
+      /* outline-color: orange; */
+      /* outline-style: solid; */
+      outline-offset: 30px;
+      
+      outline: 20px solid orange;
+      
+    }
+  </style>
+</head>
+<body>
+<div>
+  边框外轮廓（了解）
+  outline-width ：外轮廓的宽度。
+  outline-color ：外轮廓的颜色。
+  outline-style ：外轮廓的风格。
+  none ： 无轮廓
+  dotted ： 点状轮廓
+  dashed ： 虚线轮廓
+  solid ： 实线轮廓
+  double ： 双线轮廓
+  outline-offset 设置外轮廓与边框的距离，正负值都可以设置。
+  注意： outline-offset 不是 outline 的子属性，是一个独立的属性。
+  outline 复合属性
+  outline:50px solid blue;
+</div>
+</body>
+</html>

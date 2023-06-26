@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_box-sizing</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: deepskyblue;
+      padding: 5px;
+      border: 5px solid black;
+      margin-bottom: 20px;
+      box-sizing: content-box;
+    }
+    
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+      padding: 5px;
+      border: 5px solid black;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<!--box-sizing 怪异盒模型
+box-sizing 有两种类型
+content-box  width 和 height 设置的是盒子内容区的大小。（默认值）
+border-box width 和 height 设置的是盒子总大小。（怪异盒模型）-->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>03_background-size</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      padding: 50px;
+      border: 50px dashed rgba(255, 0, 0, 0.7);
+      
+      background-image: url("../images/bg03.jpg");
+      
+      background-repeat: no-repeat;
+      background-size: 400px 400px;
+      background-size: 100% 100%;
+      background-size: contain;
+      background-size: cover;
+      
+    }
+  </style>
+</head>
+<body>
+<div>
+  background-size
+  作用：设置背景图的尺寸。
+  语法：
+  1. 用长度值指定背景图片大小，不允许负值。
+  background-size: 300px 200px;
+  2. 用百分比指定背景图片大小，不允许负值。
+  background-size: 100% 100%;
+  3. auto ： 背景图片的真实大小。 —— 默认值
+  4. contain ： 将背景图片等比缩放，使背景图片的宽或高，与容器的宽或高相等，再将完整
+  背景图片包含在容器内，但要注意：可能会造成容器里部分区域没有背景图片。
+  background-size: contain;
+  cover ：将背景图片等比缩放，直到完全覆盖容器，图片会尽可能全的显示在元素上，但要
+  5.
+  注意：背景图片有可能显示不完整。—— 相对比较好的选择
+  background-size: cover;
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>05_多背景图</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      border: 1px solid black;
+      background: url('../images/bg-lt.png') no-repeat left top,
+      url('../images/bg-rt.png') no-repeat right top,
+      url('../images/bg-lb.png') no-repeat left bottom,
+      url('../images/bg-rb.png') no-repeat right bottom;
+  </style>
+</head>
+<body>
+<div>
+  CSS3 允许元素设置多个背景图片
+  /* 添加多个背景图 */
+  background: url(../images/bg-lt.png) no-repeat,
+  url(../images/bg-rt.png) no-repeat right top,
+  url(../images/bg-lb.png) no-repeat left bottom,
+  url(../images/bg-rb.png) no-repeat right bottom;
+</div>
+
+</body>
+</html>

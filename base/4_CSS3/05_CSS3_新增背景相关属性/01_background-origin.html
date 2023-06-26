@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_background-origin</title>
+  <style>
+    .box1 {
+      width: 400px;
+      height: 400px;
+      background-color: skyblue;
+      margin: 0 auto;
+      font-size: 40px;
+      padding: 50px;
+      border: 50px dashed rgba(255, 0, 0, 0.7);
+      background-image: url("../images/bg01.jpg");
+      background-repeat: no-repeat;
+      background-origin: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="box1">你好啊</div>
+
+background-origin
+作用：设置背景图的原点
+语法：
+1.padding-box ：从padding 区域开始显示背景图像。---默认值
+2. border-box :从border 区域开始显示背景图像
+3.content-box 从content 区域开始显示背景图像
+</body>
+</html>

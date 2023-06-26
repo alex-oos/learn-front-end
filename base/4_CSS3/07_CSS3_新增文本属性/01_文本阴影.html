@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>01_文本阴影</title>
+  <style>
+    body {
+      background: black;
+    }
+    
+    div {
+      font-size: 80px;
+      text-align: center;
+      color: white;
+      /* text-shadow: 3px 3px; */
+      /* text-shadow: 3px 3px red; */
+      /* text-shadow: 3px 3px 10px red; */
+      /* text-shadow: 0px 0px 15px black; */
+      text-shadow: 0px 0px 20px red;
+      font-family: '翩翩体-简';
+    }
+  </style>
+</head>
+<body>
+<div>
+  文本阴影
+  在 CSS3 中，我们可以使用 text-shadow 属性给文本添加阴影。
+  语法：
+  text-shadow: h-shadow v-shadow blur color;
+  值
+  描述
+  h-shadow 必需写，水平阴影的位置。允许负值。
+  v-shadow 必需写，垂直阴影的位置。允许负值。
+  blur 可选，模糊的距离。
+  color 可选，阴影的颜色
+  默认值： text-shadow:none 表示没有阴影。
+</div>
+</body>
+</html>
