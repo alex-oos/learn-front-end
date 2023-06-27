@@ -10,7 +10,7 @@ https://www.bilibili.com/read/cv5650633?spm_id_from=333.999.0.0
 
 https://www.bilibili.com/video/BV1p84y1P7Z5/?vd_source=e33a356475cf6a18a9f6345f4e44a209
 
-- 学习时间：从2023年6月8日到2023年6月26日
+- 学习时间：从2023年6月8日到2023年6月27日
 
 ### 2. 
 
