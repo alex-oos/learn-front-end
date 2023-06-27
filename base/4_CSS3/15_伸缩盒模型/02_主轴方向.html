@@ -5,9 +5,53 @@
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <title>Document</title>
+  <title>02_主轴方向</title>
+  <style>
+    .outer {
+      width: 1000px;
+      height: 600px;
+      background-color: #888;
+      margin: 0 auto;
+      /*伸缩盒的相关属性-start*/
+      /*将元素为了变为伸缩容器（开启flex布局）*/
+      display: flex;
+      /*主轴方向 ,水平从左到右，默认*/
+      flex-direction: row;
+      /* 调整主轴方向，水平从右到左 */
+      /* flex-direction: row-reverse; */
+      /* 调整主轴方向，垂直从上到下 */
+      /* flex-direction: column; */
+      
+      /* 调整主轴方向，垂直从下到上 */
+      /* flex-direction: column-reverse; */
+    }
+    
+    
+    .inner {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 <body>
 
+<div class="outer">
+  <div class="inner">1</div>
+  <div class="inner">2</div>
+  <div class="inner">3</div>
+
+</div>
+<div>
+  主轴方向：
+  属性名： flex-direction
+  常用值如下：
+  1. row ：主轴方向水平从左到右 —— 默认值
+  2. row-reverse
+  3. column ：主轴方向垂直从上到下。
+  4. column-reverse ：主轴方向垂直从下到上。
+</div>
 </body>
 </html>
