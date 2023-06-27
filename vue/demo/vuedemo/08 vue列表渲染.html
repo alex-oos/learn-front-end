@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+<div id="app">
+  <ul>
+    <li v-for="n in 10">{{n}}</li>
+  </ul>
+  <ol>
+    <li v-for="(n,index) in 10">{{n}}--{{index}}</li>
+  </ol>
+  <hr/>
+  <table border="1">
+    <tr v-for="(item,index) in userList">
+      <td>{{index}}</td>
+      <td>{{item.id}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.age}}</td>
+    </tr>
+  </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      userList: [
+        {id: 1, username: 'heha1', age: 18},
+        {id: 2, username: 'heha2', age: 18},
+        {id: 3, username: 'heha3', age: 18},
+        {id: 4, username: 'heha4', age: 18},
+        {id: 5, username: 'heha5', age: 18}
+      
+      ]
+      
+    }
+  })
+</script>
+</body>
+
+</html>

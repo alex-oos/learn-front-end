@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+<div id="app">
+  <!-- 单向绑定 -->
+  <!-- 需要注意，绑定值的时候，里面不用写大括号 -->
+  <input type="text" v-bind:value="searchMap.keyWord">
+  <!-- 双向绑定   v-model 双向绑定，可以修改data的值，一般用于表单提交等场合-->
+  <!-- 需要注意，绑定值的时候，里面不用写大括号 -->
+  <input type="text" v-model:value="searchMap.keyWord" id="">
+  
+  <h1>{{searchMap.keyWord}}</h1>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      searchMap: {
+        keyWord: '尚硅谷'
+      }
+    }
+  })
+</script>
+</body>
+
+</html>

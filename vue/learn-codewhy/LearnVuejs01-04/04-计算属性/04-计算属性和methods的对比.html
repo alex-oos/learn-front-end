@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--  1、直接拼接-->
+  <h2>{{firstName}} {{lastName}}</h2>
+  <!--  2、使用methods 函数-->
+  <h2>{{getFullName()}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <!--  3、使用computed 计算属性-->
+  <h2>{{fullName}}</h2>
+  <h2>{{fullName}}</h2>
+  <h2>{{fullName}}</h2>
+  <h2>{{fullName}}</h2>
+  <h2>{{fullName}}</h2>
+  <h2>{{fullName}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      firstName: 'hello',
+      lastName: 'vue'
+      
+    },
+    computed: {
+      fullName: function () {
+        console.log('fullName');
+        return this.firstName + ' ' + this.lastName
+        
+      }
+    },
+    
+    methods: {
+      getFullName: function () {
+        console.log('getFullName');
+        return this.firstName + ' ' + this.lastName;
+      }
+    },
+    
+  })
+  /**
+   *  计算属性值会基于响应式依赖被缓存，一个计算属性仅会在响应式依赖更新时才重新计算
+   *  方法总是在重渲染发生时再次执行函数
+   */
+</script>
+
+</body>
+</html>

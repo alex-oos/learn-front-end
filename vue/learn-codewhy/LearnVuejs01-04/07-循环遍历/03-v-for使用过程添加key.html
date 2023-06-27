@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<!--TODO(不太理解)-->
+<body>
+<div id="app">
+  <ul>
+    <!--        添加key 是为了判断唯一性-->
+    <li :key="item" v-for="item in letters ">{{item}}</li>
+  </ul>
+  <h2 v-for="(item,index) in letters">{{item}} - {{index}} </h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      letters: ['A', 'B', 'C', 'D', 'E']
+    }
+  })
+</script>
+</body>
+</html>
