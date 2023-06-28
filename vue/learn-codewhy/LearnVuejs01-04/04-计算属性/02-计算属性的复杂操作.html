@@ -29,11 +29,16 @@
           result += item.price
           
         }
-        return result
+        return result +'￥'
         // for (let i = 0; i < this.books.length; i++) {
         //     result += this.books[i].price
         // }
         // return result
+
+        // return this.books.reduce((total,b)=>{
+        //   return total + b.price *b.count 
+        // },0)
+  
       }
       
     }

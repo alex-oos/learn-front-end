@@ -5,14 +5,14 @@
   <title>Title</title>
   <style>
     .active {
-      color: red;
+      color: white;
     }
   </style>
 </head>
 <body>
 
 <div id="app">
-  
+  <!-- v-bind 绑定数组， -->
   <!--  写的时候应当注意，多一个空格，少一个空格，都会影响错误，例如，以下错误的例子-->
   <!--  <h2 v-bind :class="['active','line']">{{messsage }}</h2>-->
   <!--  Failed to generate render function 就会报这个错，无法生成渲染-->
@@ -20,6 +20,7 @@
   <!--  含有单引号是一个字符串，不含有是'' 当做一个变量-->
   <!--  :class 是v-bind 的语法简写-->
   <h2 :class="[active,'line']">{{message}}</h2>
+  <!--  这里调用的是一个方法，getClasses()方法 返回一个数组-->
   <h2 v-bind:class="getClasses()">{{message}}</h2>
 
 </div>
@@ -36,7 +37,9 @@
     methods: {
       getClasses: function () {
         //直接返回一个数组
-        return [this.active, this.line]
+        console.log('getClasses', [this.active, this.line])
+        return ['active', 'line']
+
       }
     }
   })

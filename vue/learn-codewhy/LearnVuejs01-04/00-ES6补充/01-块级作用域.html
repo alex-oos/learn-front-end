@@ -31,13 +31,14 @@
   }
   namel = '11';
   func()
+  // dom 事件
   // 3、没有块级作用域引起的问题，for循环
   //为啥闭包可以解决问题，是因为函数有作用域
   var btns = document.getElementsByTagName('button');
   for (var i = 0; i < btns.length; i++) {
     (function (i) {
       btns[i].addEventListener('click', function () {
-        console.log('第' + i + '个按钮被点击');
+        console.log('第' +(i+1) + '个按钮被点击');
       })
     })(i)
   }
