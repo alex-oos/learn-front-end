@@ -11805,7 +11805,7 @@
     var keywordMatch = stipped.match(unaryOperatorsRE);
     if (keywordMatch && stipped.charAt(keywordMatch.index - 1) !== '$') {
       warn(
-        "avoid using JavaScript unary operator as property name: " +
+        "avoid using 5_JavaScript unary operator as property name: " +
         "\"" + (keywordMatch[0]) + "\" in expression " + (text.trim()),
         range
       );
@@ -11843,7 +11843,7 @@
       var keywordMatch = exp.replace(stripStringRE, '').match(prohibitedKeywordRE);
       if (keywordMatch) {
         warn(
-          "avoid using JavaScript keyword as property name: " +
+          "avoid using 5_JavaScript keyword as property name: " +
           "\"" + (keywordMatch[0]) + "\"\n  Raw expression: " + (text.trim()),
           range
         );
