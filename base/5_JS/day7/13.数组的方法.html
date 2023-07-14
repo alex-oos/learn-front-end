@@ -40,13 +40,18 @@
 			 * 			可以传递一些新的元素，这些元素将会自动插入到开始位置索引前边
 			 * 	
 			 */
+			// 5、splice 作用： 删除元素/插入元素/替换元素
+			//splice(start)
+			//splice(start,deleteCount)
+			//删除元素：第二个参数传入你要删除的几个元素(如果没有传，就删除后面所有的元素)
 			
 			arr = ["孙悟空","猪八戒","沙和尚","唐僧","白骨精"];
 			var result = arr.splice(3,0,"牛魔王","铁扇公主","红孩儿");
 			
 			console.log(arr);
-			//console.log(result);
-			
+			console.log(result);
+			arr =arr.slice(0,arr.length)
+			console.log("删除数组中的所有元素",arr)
 			
 		</script>
 	</head>
