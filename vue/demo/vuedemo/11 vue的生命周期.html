@@ -29,10 +29,11 @@
       }
       
     },
-    //===创建时的四个事件
+    //创建阶段的两个时间： beforeCreate() created()
     
+    // beforeCreate：是new Vue()之后触发的第一个钩子，此时 data、methods、computed以及watch上的数据和方法还未初始化，都不能被访问。
     beforeCreate() { // 第一个被执行的钩子方法：实例被创建出来之前执行
-      
+      console.log("beforeCreate....")
       console.log(this.message) //undefined
       
       this.show() //TypeError: this.show is not a function
@@ -41,10 +42,13 @@
       
     },
     
+    // created：在实例创建完成后被立即调用，此时已完成以下的配置：数据观测 (data observer)，property 和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始，$el property 目前尚不可用，也就是可以使用数据，更改数据，在这里更改数据不会触发updated函数。
     created() { // 第二个被执行的钩子方法
+      console.log("created....")
+
       // 在页面渲染之前执行
       
-      debugger // 表示加一个断点
+      // debugger // 表示加一个断点
       console.log('created....')
       
       console.log(this.message) //床前明月光
@@ -57,17 +61,17 @@
       
     },
     
+    // 挂载阶段的两个事件： beforeMount() mounted()
     beforeMount() { // 第三个被执行的钩子方法
-      
+      console.log('beforeMount....')
       console.log(document.getElementById('h3').innerText) //{{ message }}
       
       // beforeMount执行时，模板已经在内存中编辑完成了，尚未被渲染到页面中
       
     },
     
-    mounted() { // 第四个被执行的钩子方法  // 在页面渲染之后执行
-      
-      debugger // 表示加一个断点
+    mounted() { // 第四个被执行的钩子方法  // 在页面渲染之后执行      
+      // debugger // 表示加一个断点
       console.log('mounted....')
       
       console.log(document.getElementById('h3').innerText) //床前明月光
@@ -75,11 +79,9 @@
       // 内存中的模板已经渲染到页面，用户已经可以看见内容
       
     },
-    
-    
-    //===运行中的两个事件
-    
+    // 运行阶段的两个事件： beforeUpdate() updated() 
     beforeUpdate() { // 数据更新的前一刻
+      console.log('beforeUpdate....')
       
       console.log('界面显示的内容：' + document.getElementById('h3').innerText)
       
@@ -90,15 +92,26 @@
     },
     
     updated() {
-      
+      console.log('updated....')
       console.log('界面显示的内容：' + document.getElementById('h3').innerText)
-      
       console.log('data 中的 message 数据是：' + this.message)
-      
       // updated执行时，内存中的数据已更新，并且页面已经被渲染
-      
+    },
+    // 销毁阶段的事件： beforeDestroy() destroyed()
+    beforeDestroy() {
+      console.log('beforeDestroy....')
+      // 在实例销毁之前调用。在这一步，实例仍然完全可用。
+      // 一般在这一步，做一些收尾工作，例如清除定时器
+    },
+    destroyed() {
+  
+      // 在实例销毁之后调用。
+      // 调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。
+      console.log('destroyed....')
     }
-  })
+    
+  }
+  )
 </script>
 </body>
 
