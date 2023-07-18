@@ -21,7 +21,7 @@ https://www.bilibili.com/read/cv5650633?spm_id_from=333.999.0.0
 - 备注：javaScript与java类似，所以只是基本语法的学习，不需要太多时间，后面的vue.js才是重点
 
 ### 3. 2019年coderwhy vue-vuejs从入门到精通教程
-- 学习视频：https://www.bilibili.com/video/BV17j411f74d?p=7&vd_source=e33a356475cf6a18a9f6345f4e44a209
+- 学习视频：https://www.bilibili.com/video/BV17j411f74d/?vd_source=e33a356475cf6a18a9f6345f4e44a209
 - 学习视频以及代码资料链接：https://pan.baidu.com/s/13BWh8GWf5u1fvepG4d17BA  提取码：k8tm
 - 学习时间：2023年7月17日到 2023年7月XX日
 - [ ] 已经开始
