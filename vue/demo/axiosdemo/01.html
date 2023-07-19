@@ -15,8 +15,11 @@
     {{user.name}} -- {{user.age}}
   </div>
 </div>
+<!--cdn的方式引入Vue-->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="axios.min.js"></script>
+<!--cdn的方式引入axios-->
+<!--axios 的官网地址：https://axios-http.com/zh/docs/intro-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
   new Vue({
     el: '#app',
@@ -35,16 +38,24 @@
         //使用axios发送ajax请求
         //axios.提交方式("请求接口路径").then(箭头函数).catch(箭头函数)
         axios.get("data.json")
-            .then(response => {//请求成功执行then方法
+            .then((response) => {//请求成功执行then方法
               //response就是请求之后返回数据
               // console.log(response)
               //通过response获取具体数据，赋值给定义空数组
+              console.log(response.data); //`data` 由服务器提供的响应
+              console.log(response.status); //`status` 来自服务器响应的 HTTP 状态码
+              console.log(response.statusText); //`statusText` 来自服务器响应的 HTTP 状态信息
+              console.log(response.headers); //`headers` 服务器响应的头
+              console.log(response.config); //`config` 是为请求提供的配置信息
+              console.log(response.request); //`request` 是生成此响应的请求
+              // 主要使用的response.data 里面的数据
               this.userList = response.data.data.items
               console.log(this.userList)
             })
-            .catch(error => {
+            .catch((error) => {
               console.log(error)
             }) //请求失败执行catch方法
+        
       }
     }
   })
