@@ -1,12 +1,14 @@
+// 使用js 写一个简单的http server
 const http = require('http');
 http.createServer(function (request, response) {
   // 发送 HTTP 头部
   // HTTP 状态值: 200 : OK
   // 内容类型: text/plain
-  console.log(request.toString());
+  console.log(request.url);
+  console.log(request.method);
   response.writeHead(200, {'Content-Type': 'text/plain'});
   // 发送响应数据 "Hello World"
   response.end('Hello Server');
-}).listen(8888);
+}).listen(8888); // 监听8888端口
 // 终端打印如下信息
 console.log('Server running at http://127.0.0.1:8888/');
