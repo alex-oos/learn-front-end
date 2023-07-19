@@ -7,7 +7,6 @@ exports.getList = getList;
 exports.save = save;
 
 // 定义一些方法，设置看哪些方法可以被调用
-
 function getList() {
 
   console.log('getList......');

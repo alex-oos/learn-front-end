@@ -28,7 +28,6 @@
   
   // 可以从其他文件 import 进来
   const Welcome = {template: '<div>欢迎</div>'}
-  
   const Student = {template: '<div>student list</div>'}
   const Teacher = {template: '<div>teacher list</div>'}
   
@@ -36,10 +35,8 @@
   const routes = [
     {path: '/', redirect: '/welcome'}, //设置默认指向的路径
     {path: '/welcome', component: Welcome},
-    
     {path: '/student', component: Student},
     {path: '/teacher', component: Teacher}
-  
   ]
   //3.创建router实例，然后传`router` 配置
   const router = new VueRouter({
