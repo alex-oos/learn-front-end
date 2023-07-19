@@ -1,4 +1,4 @@
-;
+
 var moduleB = (function () {
   var obj = {}
 
