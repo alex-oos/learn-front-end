@@ -1,7 +1,6 @@
 // axoios具体用法
 // 官网地址：https://axios-http.com/zh/docs/intro
-const axios = require("axios");
-const node: inspector = require("node:inspector"); //引入axios模块
+const axios = require("axios"); //引入axios模块
 
 //axios 发起get请求的两种方式
 // 方法一：传入一个url字符串
