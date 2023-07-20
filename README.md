@@ -1,6 +1,6 @@
 # web 前端学习路线
 
-## 一、学习地址：
+## 一、学习路线：
 
 https://www.bilibili.com/read/cv5650633?spm_id_from=333.999.0.0
 
