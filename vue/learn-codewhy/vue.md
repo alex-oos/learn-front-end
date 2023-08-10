@@ -1,6 +1,6 @@
 ## Vue学习
 
-学习视频： https://www.bilibili.com/video/BV17j411f74d?p=7&vd_source=e33a356475cf6a18a9f6345f4e44a209
+学习视频： https://www.bilibili.com/video/BV17j411f74d?p=1&vd_source=e33a356475cf6a18a9f6345f4e44a209
 
 
 

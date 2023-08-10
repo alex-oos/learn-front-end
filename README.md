@@ -23,7 +23,7 @@ https://www.bilibili.com/read/cv5650633?spm_id_from=333.999.0.0
 ### 3. 2019年coderwhy vue-vuejs从入门到精通教程
 - 学习视频：https://www.bilibili.com/video/BV17j411f74d/?vd_source=e33a356475cf6a18a9f6345f4e44a209
 - 学习视频以及代码资料链接：https://pan.baidu.com/s/13BWh8GWf5u1fvepG4d17BA  提取码：k8tm
-- 学习时间：2023年7月17日到 2023年7月23日
+- 学习时间：2023年7月17日到 2023年8月15日
 - [ ] 学习中
 
 ### 4.Vue3 
