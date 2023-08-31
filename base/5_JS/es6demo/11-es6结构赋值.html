@@ -1,0 +1,64 @@
+<script>
+// es 6解构赋值  教程： https://juejin.cn/post/7032832142342094856
+// 概念  他是一种针对数组或者对象进行模式匹配，然后对其中的变量进行赋值。
+
+
+//  数组的解构赋值（Array）
+// Es6的在这个方法也可以对数组进行解构赋值，需要遵从一定的注意事项，如果不遵从，很可能达到的结果不是我们想要的✔格式是：let [变量1，变量2] = 数组；
+// 注意
+// 我们需要按照数组元素的排列顺序进行解构赋值
+// 数组也可以被单做对象来解构赋值let {0:XXX，1:XXX,........[arr.length]:XXX}=arr
+let [a, b, c] = [1, 2, 3]
+console.log(a, b, c)
+let arr = ["大黄蜂","暴风雪","雷诺","大Q吧","空天猎霸"];
+let {0:first,[arr.length-1]:last} = arr;//结果是：大黄蜂 空天猎霸
+//同样是上边的例子如果我们这样解构
+let [e,f] = arr;//注意这里的数组中元素个数和原数组元素个数是不对称的
+//我们打印一下元素f
+ console.log(f);//结果：undefined  这里带的f相当于声明了并没有赋值
+//交换两个变量的值(以前我们可能会新定义一个变量来做中介，进而让两个变量交换值，现在呢？)
+let x = 10;//这里也可以是字符串
+let y = 20;
+[y,x] = [x,y]
+console.log(x,y);//结果：20  10
+
+
+
+//  对象解构赋值（Object）
+let { foo, bar } = { foo: 'aaa', bar: 'bbb' };
+console.log(foo, bar)
+
+
+
+var person = {
+      name: "洋葱",
+      age: 38,
+      //洋葱的徒弟prentice
+      prentice: {
+        height: 168,
+        long: {
+          weight:150
+        }
+      }
+    }
+
+let {
+      name,
+      age,
+      prentice: {
+        height,
+        long: {
+          weight
+        }
+      }
+    } = person;
+    //height和weight是洋葱徒弟的属性我们也获取到了，搞定他了。
+    console.log(name,age,height,weight);
+
+//  字符串解构赋值（String）
+let str = "小酒窝长睫毛，迷人的无可救药";
+let {0:abc,6:mid,8:abo} = str;
+console.log(abc,mid,abo)
+
+
+</script>
